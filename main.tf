@@ -5,9 +5,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "helloworld" {
-  ami = "ami-0454bb2fefc7de534"
-  instance_type = "t2.micro"
+  ami = var.ami_var
+  instance_type = var.instance_type_var
   tags = {
-    Name = "Ubuntu"
+    Name = var.tags_var
   }
 }
