@@ -4,14 +4,14 @@ provider "aws" {
  secret_key = var.secret_key_var
 }
 
-resource "aws_instance" "helloworld" {
+resource "aws_instance" "ykahn" {
   ami = var.ami_var
   instance_type = var.instance_type_var
   tags = {
     Name = var.tags_var
   }
 }
-
+/*
 resource "aws_instance" "helloworld2" {
   ami = var.ami_var
   instance_type = var.instance_type_var
@@ -35,3 +35,4 @@ resource "aws_instance" "helloworld4" {
     Name = var.tags_var
   }
 }
+*/
